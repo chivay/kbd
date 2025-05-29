@@ -16,9 +16,6 @@
         }; 
   in {
     packages.x86_64-linux.flash = pkgs.writeShellScriptBin "flash_script" ''
-        DATE="$(${pkgs.ddate}/bin/ddate +'the %e of %B%, %Y')"
-        ${pkgs.cowsay}/bin/cowsay Hello, world! Today is $DATE.
-
         export QMK_HOME=${keychron_src}
         ${pkgs.qmk}/bin/qmk flash ${self.packages.x86_64-linux.firmware}/fw.bin
         ${pkgs.wb32-dfu-updater}/bin/wb32-dfu-updater_cli -R
