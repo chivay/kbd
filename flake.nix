@@ -8,10 +8,10 @@
   outputs = { self, nixpkgs }: let 
         pkgs = import nixpkgs { system = "x86_64-linux"; };
         keychron_src = pkgs.fetchFromGitHub {
-          owner = "Keychron";
+          owner = "chivay";
           repo = "qmk_firmware";
-          rev = "b507ea2216cfa51bf43a8be35d180870c97ec433";
-          sha256 = "sha256-Y05wyrDT4SBiuDQLfaJvguNz8OmbfzZqR8X1HP0RAEw=";
+          rev = "6c326c72dd5dde054ca8c88ce58ca8134467ebb5";
+          sha256 = "sha256-ibGzSiI4l4vdjyNk5ZjUeZBm8ExjnofZeRDpUXSxGcw=";
           fetchSubmodules = true;
         }; 
   in {
