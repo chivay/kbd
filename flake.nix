@@ -31,7 +31,6 @@
       src = keychron_src;
 
       SKIP_GIT=1;
-      QMK_HOME=keychron_src;
 
       patchPhase = ''
         mkdir -p keyboards/lemokey/p1_pro/ansi_encoder/keymaps/chivay/
