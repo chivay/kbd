@@ -21,6 +21,7 @@
 
         export QMK_HOME=${keychron_src}
         ${pkgs.qmk}/bin/qmk flash ${self.packages.x86_64-linux.firmware}/fw.bin
+        ${pkgs.wb32-dfu-updater}/bin/wb32-dfu-updater_cli -R
       '';
 
     packages.x86_64-linux.firmware = pkgs.stdenv.mkDerivation rec {
