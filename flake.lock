@@ -1,0 +1,27 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1748537654,
+        "narHash": "sha256-7LzbyLP4DZNFd30qhAwveba41iOhggUNoaSAhhfEW5Y=",
+        "owner": "chivay",
+        "repo": "nixpkgs",
+        "rev": "ac6d0b36cd8dd26f6d744c0a8fb4025ee5844e3a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "chivay",
+        "ref": "qmk-fix",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
